@@ -36,7 +36,42 @@ chmod +x main.py
 ANTHROPIC_API_KEY=sk-ant-api03-tu_key_aqui
 ```
 
-## 3️⃣ Preparar imágenes (1 minuto)
+## 3️⃣ Elegir Interfaz
+
+### 🌐 Opción A: Interfaz Web (Más fácil - RECOMENDADO)
+
+```bash
+# Iniciar app web
+./run_webapp.sh
+```
+
+**Se abrirá en tu navegador** → `http://localhost:8501`
+
+**Ventajas:**
+- ✅ Interfaz visual intuitiva
+- ✅ Drag & drop de imágenes
+- ✅ Gráficos interactivos
+- ✅ Sin necesidad de comandos
+- ✅ Comparación lado a lado
+- ✅ Visualizaciones automáticas
+
+**Pasos en la Web:**
+1. Ve a **"📸 Análisis Individual"** (sidebar izquierdo)
+2. Arrastra una imagen
+3. Click en **"🚀 Analizar Imagen"**
+4. ¡Listo! Explora resultados en tabs
+
+**Ver guía completa:** `WEB_APP_GUIDE.md`
+
+---
+
+### ⌨️ Opción B: CLI (Para usuarios avanzados)
+
+Continúa con los pasos 3-5 abajo.
+
+---
+
+## 3️⃣ Preparar imágenes (1 minuto) [CLI]
 
 Coloca imágenes de campañas educativas en `examples/`:
 

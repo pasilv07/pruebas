@@ -23,6 +23,28 @@ Analiza imágenes de campañas educativas (universidades, institutos, plataforma
 - Recomendaciones tácticas accionables
 - Reportes en JSON, Markdown, Excel y CSV
 
+### 🖥️ Dos Formas de Usar
+
+**1. Interfaz Web (Recomendado para la mayoría de usuarios)**
+```bash
+./run_webapp.sh
+# O manualmente: streamlit run app.py
+```
+- Interfaz visual moderna y fácil de usar
+- Drag & drop de imágenes
+- Visualizaciones interactivas con gráficos
+- Comparación lado a lado
+- Sin necesidad de comandos
+
+**2. CLI (Para usuarios avanzados y automatización)**
+```bash
+python main.py analyze imagen.jpg
+python main.py batch directorio/
+```
+- Ideal para scripts y automatización
+- Procesamiento por lotes optimizado
+- Integración con pipelines
+
 ---
 
 ## 🚀 Instalación Rápida
@@ -67,7 +89,69 @@ python main.py setup
 
 ## 📖 Uso
 
-### Comando 1: Analizar una imagen individual
+### 🌐 Opción 1: Interfaz Web (Recomendado)
+
+#### Iniciar la aplicación web
+
+```bash
+# Opción rápida
+./run_webapp.sh
+
+# O manualmente
+streamlit run app.py
+```
+
+La aplicación se abrirá automáticamente en tu navegador en `http://localhost:8501`
+
+#### Características de la Web App
+
+**🏠 Página de Inicio**
+- Introducción completa al framework
+- Explicación de las 5 fases de análisis
+- Guías interactivas
+
+**📸 Análisis Individual**
+- Drag & drop de imágenes
+- Análisis en tiempo real (~30-60s)
+- Visualización interactiva de resultados:
+  - Gráficos de radar para scores
+  - Tabs organizados por fase
+  - Insights y recomendaciones destacadas
+- Descarga de reportes (JSON, Markdown)
+
+**📊 Análisis por Lotes**
+- Upload de múltiples imágenes simultáneamente
+- Progress bar en tiempo real
+- Configuración de workers paralelos
+- Resultados comparativos:
+  - Tabla comparativa interactiva
+  - Gráficos de barras agrupados
+  - Scatter plots (Autenticidad vs Innovación)
+  - Distribución de arquetipos
+- Exportación a Excel, CSV, JSON
+
+**🔍 Comparación**
+- Selección de 2 reportes guardados
+- Comparación lado a lado:
+  - Scores con diferencias calculadas
+  - Gráfico de radar superpuesto
+  - Estrategias y mensajes
+  - Elementos visuales
+  - Insights competitivos
+- Análisis de diferencias automático
+
+#### Navegación
+
+- **Sidebar izquierdo:** Navegación entre páginas
+- **Indicador de API key:** Verifica si está configurada
+- **Tabs organizados:** Contenido estructurado por sección
+- **Botones de descarga:** En cada sección relevante
+
+---
+
+### ⌨️ Opción 2: Interfaz CLI
+
+#### Comando 1: Analizar una imagen individual
 
 ```bash
 python main.py analyze ruta/a/imagen.jpg
