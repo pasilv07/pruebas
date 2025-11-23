@@ -3,7 +3,7 @@ Generador de reportes en múltiples formatos
 """
 import json
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Dict
 from datetime import datetime
 
 import pandas as pd
