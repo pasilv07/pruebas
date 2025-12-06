@@ -1,0 +1,9 @@
+# Output files (generated videos and frames)
+output/
+*.mp4
+*.avi
+*.mov
+
+# Python cache
+__pycache__/
+*.pyc
